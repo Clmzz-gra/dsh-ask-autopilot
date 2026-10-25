@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Ask autopilot">
+  <defs>
+    <linearGradient id="autopilot-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f6df6"/>
+      <stop offset="1" stop-color="#7b3ff2"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#autopilot-bg)"/>
+  <path d="M32 12c-5.2 0-9.2 4-9.2 9.2v7.4l-3 5.1c-.5.9.1 2 1.1 2h22.2c1 0 1.6-1.1 1.1-2l-3-5.1v-7.4C41.2 16 37.2 12 32 12Z"
+        fill="#ffffff" opacity="0.95"/>
+  <path d="M28.4 38.4a3.9 3.9 0 0 0 7.2 0" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="46" cy="44" r="11" fill="#0f1b33"/>
+  <circle cx="46" cy="44" r="11" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <path d="M46 37.6V44l4.4 2.6" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,63 @@
+{
+  "name": "dsh-ask-autopilot",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Auto-answers an unanswered ask_user_question after a configurable deadline (recommended option first) and plays a notification sound when a question appears.",
+  "license": "MIT",
+  "author": "Clmzz-gra <in2102display@163.com>",
+  "homepage": "https://github.com/Clmzz-gra/dsh-ask-autopilot#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clmzz-gra/dsh-ask-autopilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Clmzz-gra/dsh-ask-autopilot/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "ask-user-question",
+    "timeout",
+    "autopilot",
+    "notification-sound"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dependencies": {
+    "@deepseek-ai/schemastery": "~3.18.5"
+  },
+  "scripts": {
+    "test": "node --test test/host.test.mjs test/client.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

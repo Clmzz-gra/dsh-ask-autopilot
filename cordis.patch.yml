@@ -1,0 +1,10 @@
+# Ask autopilot bundle patch.
+#
+# One Host row owns the deadline answerer and the routes the browser half reads.
+# The browser half rides this row because its package name is this row's name;
+# the row id doubles as the settings namespace the settings page writes, so the
+# client and the row must keep the same id.
+- insert:
+    - id: ask-autopilot
+      name: dsh-ask-autopilot
+      config: {}

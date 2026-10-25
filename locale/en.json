@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Ask autopilot",
+    "description": "Answers an unanswered question after a configurable deadline with the recommended choice, and plays a notification sound when a question appears."
+  }
+}
