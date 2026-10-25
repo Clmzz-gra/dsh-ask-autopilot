@@ -73,3 +73,5 @@ ln -s ~/.dsh/profiles/<profile>/node_modules/@deepseek-ai/schemastery node_modul
 ```
 
 On Windows use a directory junction: `cmd /c mklink /J <link> <target>`. A registry install needs none of this, because `@deepseek-ai/schemastery` is a regular dependency.
+
+Switching a profile from a linked checkout to the registry package can fail with `ERR_PNPM_EPERM` on Windows while the Host holds the old directory. Remove the stale link from the profile's `node_modules` and install again; nothing else is needed.

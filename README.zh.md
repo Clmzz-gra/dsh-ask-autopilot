@@ -73,3 +73,5 @@ ln -s ~/.dsh/profiles/<profile>/node_modules/@deepseek-ai/schemastery node_modul
 ```
 
 Windows 上请建立目录联接（`cmd /c mklink /J <链接> <目标>`）。从 registry 安装不需要这一步，因为 `@deepseek-ai/schemastery` 是普通依赖。
+
+把 profile 从本地链接切换成 registry 安装时，Windows 上可能因为宿主仍占用旧目录而报 `ERR_PNPM_EPERM`。删掉 profile `node_modules` 里那个失效的链接再装一次即可，不需要其他处理。
